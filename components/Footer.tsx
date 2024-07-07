@@ -1,6 +1,7 @@
 import Pipe from "./Pipe";
 import logo from '../assets/logo192.png';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -37,13 +38,13 @@ const Footer = () => {
                         © 2024 <span className="font-bold">Pienteger</span>. All rights reserved.</p>
 
                     <nav className="flex flex-col md:flex-row md:gap-1">
-                        <a href="/career" className="font-semibold hover:underline">Career</a>
+                        <Link href="/career" className="font-semibold hover:underline">Career</Link>
                         <Pipe />
-                        <a href="/terms" className="font-semibold hover:underline">Terms of Use</a>
+                        <Link href="/tos" className="font-semibold hover:underline">Terms of Use</Link>
                         {/* <Pipe />
                         <a href="/sales" className="font-semibold hover:underline">Sales and Refunds</a> */}
                         <Pipe />
-                        <a href="/legal" className="font-semibold hover:underline">Legal</a>
+                        <Link href="/legal" className="font-semibold hover:underline">Legal</Link>
                         {/* <Pipe />
                         <a href="/sitemap" className="font-semibold hover:underline">Site Map</a> */}
                     </nav>

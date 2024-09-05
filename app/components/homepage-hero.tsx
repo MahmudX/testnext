@@ -3,7 +3,7 @@ import Image from "next/image";
 const HomePageHero = () => {
     return (
         <>
-            <div className="hidden md:block bg-blue relative py-[90px] w-full h-fit hero-desktop">
+            <div className="hidden md:block bg-blue relative py-[90px] w-full h-fit grad-bar-t">
                 <Image src={"/pipe-hero-desktop.svg"} alt={""} width={967} height={203}
                     className="absolute left-0 bottom-0" />
                 <div className="flex flex-col gap-6 ml-[80px] z-10">
@@ -28,7 +28,7 @@ const HomePageHero = () => {
             </div>
 
 
-            <div className="flex flex-col gap-2 md:hidden bg-blue w-full h-fit hero-desktop">
+            <div className="flex flex-col gap-2 md:hidden bg-blue w-full relative h-fit grad-bar-t">
                 <div className="px-5 pt-10 flex flex-col gap-6 relative">
                     <Image src={"/pipe-hero-mobile.svg"} alt={""} width={385} height={295} className="absolute left-0 bottom-5" />
                     <span className="text-white text-3xl">

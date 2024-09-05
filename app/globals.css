@@ -2,28 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-/* globals.css */
-
+/* Satoshi */
 @font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Ligth.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Satoshi-VariableItalic';
-  src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-LigthItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
   font-style: italic;
 }
 
-/* Optionally set the base font-family */
-body {
-  font-family: 'Satoshi-Variable', sans-serif;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-.hero-desktop::before {
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+
+/* Optionally set the base font-family */
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.grad-bar-t::before {
   content: '';
   position: absolute;
   top: 0;

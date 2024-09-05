@@ -13,7 +13,7 @@ const Navbar = () => {
     }
 
     return (<>
-        <div className="bg-blue text-white px-[20px] md:px-[80px] py-[20px]">
+        <div className={`bg-blue text-white px-[20px] md:px-[80px] w-full py-[20px] ${isMobileMenuOpen ? 'fixed overflow-hidden z-50' : ''}`}>
             <div className="flex flex-row items-center">
                 <Link className="mr-auto text-base md:text-2xl font-bold flex" href={"/"}>
                     <Image src={"/navbar-logo.svg"} alt={""} width={24} height={24} className="mr-[12px]" />
@@ -38,24 +38,27 @@ const Navbar = () => {
         </div>
 
         {
-            /* Mobile Menu */
-            isMobileMenuOpen && (<div className="bg-blue md:hidden flex flex-col min-h-screen text-white py-[40px]"
-                hidden={!isMobileMenuOpen}>
-                <div className="flex-1 flex flex-col justify-start items-center gap-[40px]">
-                    <span className="text-3xl font-medium">Home</span>
-                    <span className="text-3xl font-medium">Service</span>
-                    <span className="text-3xl font-medium">Contact</span>
-                    <span className="text-3xl font-medium">About Us</span>
+
+            isMobileMenuOpen && (
+                <div className={`bg-blue md:hidden flex flex-col h-[calc(100vh-82px)] w-full z-[9999]  top-[82px] text-white py-[40px]  grad-bar-t ${isMobileMenuOpen ? 'fixed overflow-hidden' : ''}`}>
+                    <div className="flex-1 flex flex-col justify-start items-center gap-[40px]">
+                        <span className="text-3xl font-medium">Home</span>
+                        <span className="text-3xl font-medium">Service</span>
+                        <span className="text-3xl font-medium">Contact</span>
+                        <span className="text-3xl font-medium">About Us</span>
+                    </div>
+                    <div className="px-[20px] flex-initial mx-auto flex gap-[12px]">
+                        <button className="cta-btn-filled">
+                            <span>Contact Us</span>
+                        </button>
+                        <button className="cta-btn">
+                            <span>Start Free</span>
+                        </button>
+                    </div>
                 </div>
-                <div className="px-[20px] flex-initial mx-auto flex gap-[12px]">
-                    <button className="cta-btn-filled">
-                        <span>Contact Us</span>
-                    </button>
-                    <button className="cta-btn">
-                        <span>Start Free</span>
-                    </button>
-                </div>
-            </div>)
+
+            )
+
         }
 
 

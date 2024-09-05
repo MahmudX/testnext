@@ -48,11 +48,11 @@ const Navbar = () => {
                     <span className="text-3xl font-medium">About Us</span>
                 </div>
                 <div className="px-[20px] flex-initial mx-auto flex gap-[12px]">
-                    <button className="cta-btn">
-                        <span className="block text-sm font-medium text-[#0033E5]">Contact Us</span>
-                    </button>
                     <button className="cta-btn-filled">
-                        <span className="block text-sm font-medium">Start Free</span>
+                        <span>Contact Us</span>
+                    </button>
+                    <button className="cta-btn">
+                        <span>Start Free</span>
                     </button>
                 </div>
             </div>)

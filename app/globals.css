@@ -36,9 +36,9 @@ body {
 
 
 .cta-btn {
-  @apply px-[32px] py-[12px] font-medium rounded-[200px] border-white border-[1px] text-white;
+  @apply px-[32px] py-[12px] text-sm font-medium rounded-[200px] border-white border-[1px] text-white;
 }
 
 .cta-btn-filled {
-  @apply px-[32px] py-[12px] font-medium rounded-[200px] border-white border-[1px] bg-white text-blue;
+  @apply px-[32px] py-[12px] text-sm font-medium rounded-[200px] border-white border-[1px] bg-white text-blue;
 }

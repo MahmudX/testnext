@@ -2,115 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
 
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Optionally set the base font-family */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Satoshi-Variable', sans-serif;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(39, 1, 1, 0.5);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(68, 1, 1, 0.7);
-}
-
-/* Background Dimming */
-#target-section .bg-opacity-50 {
-  background-color: rgba(94, 94, 94, 0.7) !important;
-}
-
-.pipable:after {
-  content: "";
+.hero-desktop::before {
+  content: '';
   position: absolute;
-  height: 10px;
-  width: 1px;
-  background-color: var(--footer-pipe-color);
-  margin: 3px 0
-}
-
-.font-cal-sans {
-  font-family: "Cal Sans", sans-serif !important;
-}
-
-.font-inter {
-  font-family: "Inter", sans-serif !important;
-}
-
-h1 {
-  font-family: "Cal Sans";
-  font-size: 56px;
-}
-
-h2 {
-  font-family: "Cal Sans";
-  font-size: 40px;
-  letter-spacing: 0.01em;
-}
-
-h3 {
-  font-family: "Cal Sans";
-  font-size: 36px;
-  letter-spacing: 0.015em;
-}
-
-h4 {
-  font-family: "Cal Sans";
-  font-size: 28px;
-  letter-spacing: 0.02em;
-}
-
-h5 {
-  font-family: "Cal Sans";
-  font-size: 20px;
-  letter-spacing: 0.03em;
-}
-
-h6 {
-  font-family: "Cal Sans";
-  font-size: 16px;
-  letter-spacing: 0.04em;
-}
-
-.bold-xl {
-  @apply font-bold text-xl;
-}
-
-.bold-2xl {
-  @apply font-bold text-2xl;
-}
-
-.bold-3xl {
-  @apply font-bold text-3xl;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, white);
+  opacity: 0.3;
 }
 
 
-
-.bold-4xl {
-  @apply font-bold text-4xl;
+.cta-btn {
+  @apply px-[32px] py-[12px] font-medium rounded-[200px] border-white border-[1px] text-white;
 }
 
-
-
-.bold-8xl {
-  @apply font-bold text-8xl;
-}
-
-
-.bd-flag-text {
-  @apply bg-gradient-to-r from-[#006a4e] to-[#f42a41] text-transparent bg-clip-text;
-}
-
-.product-card {
-  @apply bg-white flex flex-col rounded-lg shadow-md p-3 border border-gray-100;
-}
-
-.brand-icon-28 {
-  @apply h-28 w-auto;
+.cta-btn-filled {
+  @apply px-[32px] py-[12px] font-medium rounded-[200px] border-white border-[1px] bg-white text-blue;
 }

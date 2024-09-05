@@ -13,6 +13,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        satoshi: ['Satoshi-Variable', 'sans-serif'],
+        satoshiItalic: ['Satoshi-VariableItalic', 'sans-serif'],
+      },
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#f0f7ff',
+      'blue': '#0033E5',
     },
   },
   plugins: [],
